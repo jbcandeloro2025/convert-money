@@ -1,0 +1,81 @@
+/* =============================================
+   RESPONSIVIDADE - mobile.css
+   Adicione no index.html, após o style.css:
+   <link rel="stylesheet" href="./assets/css/mobile.css">
+   ============================================= */
+
+
+/* --- TELAS MÉDIAS: até 768px (tablet) --- */
+@media (max-width: 768px) {
+
+    .logo {
+        width: 200px;
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+
+    main {
+        width: 90%;
+        max-width: 375px;
+        padding: 32px 20px 20px;
+    }
+}
+
+
+/* --- TELAS PEQUENAS: até 480px (celular) --- */
+@media (max-width: 480px) {
+
+    .logo {
+        width: 160px;
+        margin-top: 16px;
+        margin-bottom: 12px;
+    }
+
+    main {
+        width: 95%;
+        padding: 24px 16px 16px;
+        border-radius: 12px;
+        margin-bottom: 24px;
+    }
+
+    select,
+    input {
+        font-size: 14px;
+        height: 44px;
+    }
+
+    button {
+        font-size: 16px;
+        height: 44px;
+    }
+
+    section {
+        padding: 16px 8px;
+    }
+
+    .currency-value-from,
+    .currency-value-to {
+        font-size: 16px;
+    }
+}
+
+
+/* --- TELAS MUITO PEQUENAS: até 320px --- */
+@media (max-width: 320px) {
+
+    main {
+        width: 100%;
+        border-radius: 0;
+        padding: 16px 12px;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    select,
+    input {
+        font-size: 13px;
+        height: 40px;
+    }
+}

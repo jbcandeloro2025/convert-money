@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Estilos -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/mobile.css">
+
+        <!-- Fonte Roboto (Google Fonts) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
+        <title>Convert Money</title>
+    </head>
+
+    <body>
+
+        <!-- Logo do site -->
+        <img src="./assets/img/logo.gif" alt="Logo do site" class="logo">
+
+        <main>
+
+            <!-- Select: moeda de origem -->
+            <label>
+                Converter <b>de</b>
+                <select class="currency-selector-from">
+                    <option value="">Selecione...</option>
+                    <option value="BRL">Real Brasileiro</option>
+                    <option value="USD">Dólar Americano</option>
+                    <option value="EUR">Euro</option>
+                    <option value="PYG">Guarani Paraguaio</option>
+                    <option value="ARS">Peso Argentino</option>
+                </select>
+            </label>
+
+            <!-- Select: moeda de destino -->
+            <label>
+                Converter <b>para</b>
+                <select class="currency-selector-to">
+                    <option value="">Selecione...</option>
+                    <option value="BRL">Real Brasileiro</option>
+                    <option value="USD">Dólar Americano</option>
+                    <option value="EUR">Euro</option>
+                    <option value="PYG">Guarani Paraguaio</option>
+                    <option value="ARS">Peso Argentino</option>
+                </select>
+            </label>
+
+            <!-- Input: valor a ser convertido -->
+            <label>
+                Valor
+                <input class="input-currency" placeholder="Digite o valor a ser convertido" type="number" required>
+            </label>
+
+            <!-- Botão de conversão -->
+            <button class="converButton">Converter</button>
+
+            <!-- Cotação atual (preenchida via JavaScript) -->
+            <div class="cotacao">COTAÇÃO: <span class="cotacao-valor"></span></div>
+
+            <!-- Seção de resultado -->
+            <section>
+
+                <!-- Bloco da moeda de origem -->
+                <div class="currency-from">
+                    <img id="img-from" src="./assets/img/moeda.png" alt="Moeda a ser convertida">
+                    <p class="currency" id="currency-name-from"></p>
+                    <p class="currency-value-from">-</p>
+                </div>
+
+                <img class="arrow-img" src="./assets/img/arrow.png" alt="arrow">
+
+                <!-- Bloco da moeda de destino -->
+                <div class="currency-to">
+                    <img id="img-to" src="./assets/img/moeda.png" alt="Moeda convertida">
+                    <p class="currency" id="currency-name-to"></p>
+                    <p class="currency-value-to">-</p>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- Script principal -->
+        <script src="./assets/js/script.js"></script>
+    </body>
+
+</html>
