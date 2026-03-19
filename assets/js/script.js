@@ -27,7 +27,7 @@ async function buscarTaxa(origem, destino) {
         const chave = `${origem}${destino}` // ex: "USDBRL"
         return parseFloat(data[chave].bid)  // retorna o número da taxa, ex: 5.22
     } catch (erro) {
-        alert("Erro ao buscar a cotação. Verifique sua conexão e tente novamente.")
+        alert("Selecione moedas diferentes para converter.")
         return null
     }
 }

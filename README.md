@@ -59,4 +59,4 @@ currency-convert/
 
 ## 📚 Créditos
 
-Projeto desenvolvido por **João** como desafio do curso [DevClub](https://devclub.com.br).
+Projeto desenvolvido por **jbcandeloro2025** como desafio do curso [DevClub](https://devclub.com.br).
